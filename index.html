@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+<script src="./engine/boot.js"></script>
+<script src="./engine/module/load.js"></script>
+<script>
+    var files = [
+        "./engine/module/define.js",
+        "./engine/object/director.js",
+        "./engine/object/canvas.js",
+        "./engine/object/node.js",
+        "./engine/object/style.js",
+        "./engine/object/math.js",
+        "./engine/object/camera.js",
+
+        "./test/main.js"
+    ];
+    h.load(files, function(){
+
+        h.module.run("T.main");
+    });
+
+</script>
